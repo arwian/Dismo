@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+  background: #1b1b1b;
+}
+
+nav:after{
+  content:'';
+  clear:both;
+  display: table;
+}
+
+.logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+
+nav ul{
+  float:right;
+  list-style:none;
+  margin-right: 40px;
+  position: relative;
+}
+nav ul li{
+  float:left;
+  display: inline-block;
+  background: none;
+  margin: 0 20px;
+}
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+
+}
+
+nav ul li a:hover{
+  color:#c29525;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #c29525,
+        0 0 5px #c29525;
+}
+
+nav ul ul{
+  position: absolute;
+  top:90px;
+  border-top: 3px solid #c29525;
+  opacity: 0;
+  visibility: hidden;
+  background: #1b1b1b;
+  transition: top .3s;
+}
+nav ul li:hover > ul{
+  top:70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 4rem 0;
+}
+
+.section-heading {
+  font-family: "Muli", serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #4b4b4b;
+  margin-top: 2rem;
+}
+
+.underline {
+  width: 12rem;
+  height: 0.2rem;
+  background-color: #c29525;
+}
+
+
+.gambar {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #1b1b1b 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #1b1b1b;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+
+
+.gambar2 {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+.fillcont {
+width: 60%;
+margin-top: 0px;
+justify-content: center;
+}
+.banyak3 {
+  width: 100%;
+  height:60vh;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  position: relative;
+  background: #fff;
+}
+.banyak3 h1{
+  font-size: 20px;
+}
+
+.banyak3 p{
+  font-size: 15px;
+  color: black;
+}
+
+
+
+.footer .container{
+   width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.footer-bagi{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+
+.about{
+    width: 95%;
+    text-align: center;
+    margin-top: 20px;
+}
+.about h2, p{
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.instagram{
+    width: 95%;
+    text-align: center; 
+    margin-top: 20px;
+}
+.instagram h2, p{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.wadah {
+  width: 30%;
+float: left;
+margin: 5px;
+ }
+ .wadah1{
+   width: 100%;
+  height: 10rem;
+ }
+ .instagram-img-wrapper {
+  width: 100%;
+
+ 
+}
+.instagram-img-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  background: #1b1b1b;
+}
